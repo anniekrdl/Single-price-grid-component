@@ -1,0 +1,140 @@
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*centers items on the line (the x-axis by default)*/
+    align-items: center;
+    /*centers items on the cross-axis (y by default)*/
+    background-color: hsl(204, 43%, 93%);
+}
+
+
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 47%;
+    box-shadow: 10px 10px 50px #888888;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+
+
+.join {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+}
+
+.subscription {
+    width: 50%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.why {
+    width: 50%;
+    background-color: hsla(179, 62%, 43%, 85%);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.title {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.second-title {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.txt {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+
+.subscription>div,
+.why>div {
+    color: hsl(204, 43%, 93%);
+}
+
+.sub-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.price {
+    margin-bottom: 10px;
+}
+
+.price-txt {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.dollar {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.month {
+    opacity: 0.6;
+    font-size: 12px;
+    height: 100%;
+    vertical-align: baseline;
+}
+
+.button {
+    background-color: hsl(71, 73%, 54%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 10px 10px 20px #00000036;
+}
+
+.why-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.why-txt {
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+@media (max-width: 375px) {
+    body {
+        align-items: unset;
+    }
+
+    .card {
+        width: 85%;
+        margin-top: 20px;
+    }
+
+    .subscription,
+    .why {
+        width: 100%;
+    }
+
+
+}
